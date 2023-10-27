@@ -5,11 +5,12 @@
     top:0px;
     left:0px;
     position: absolute;
+    align: center;
 
 }
 
 .background{
-    background-image: url('../img/lockscreen.jpg');
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     /* Add the blur effect */
@@ -20,5 +21,33 @@
     top:0px;
     left:0px;
     position: absolute;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    height: 100vh;           /* Set the container's height to the viewport height */
+}
+
+/* lockscreen.css */
+.lockscreenText {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation properties */
+    color:azure;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1; /* Fully opaque */
+    }
+  }
+  
+
+body{
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
 }
 
